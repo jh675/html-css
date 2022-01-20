@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>회원 가입</title>
+    </head>
+    <body>
+        <h2>회원 가입</h2>
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="ID" autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td><input type="tel" name="tel" placeholder="010-1234-5678"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>문자수신 여부</td>
+                <td>
+                    <input type="radio" name="SMS" value="yes">예
+                    <input type="radio" name="SMS" value="no">아니오
+                </td>
+            </tr>
+            <tr>
+                <td>가입 경로</td>
+                <td>
+                    <input type="checkbox" name="subscription path" value="friends">친구 소개
+                    <input type="checkbox" name="subscription path" value="internet">인터넷 검색
+                    <input type="checkbox" name="subscription path" value="blog">블로그
+                    <input type="checkbox" name="subscription path" value="Etc">기타
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

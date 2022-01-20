@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 리스트 -->
+        <form>
+            <fieldset>
+                <legend>상품선택</legend>
+                <p><b>주문할 상품을 선택해주세요.</b></p>
+                <label><input type="checkbox" value="s_3">선물용 3kg</label>
+                <label><input type="checkbox" value="s_5">선물용 5kg</label>
+                <label><input type="checkbox" value="f_3">가정용 3kg</label>
+                <label><input type="checkbox" value="f_5">가정용 5kg</label>
+                <p><b>포장 선택</b></p>
+                <label><input type="radio" name="gift" value="yes">선물 포장</label>
+                <label><input type="radio" name="gift" value="no">선물 포장 안함</label>
+            </fieldset>
+        </form>
+
+        <br>
+        <hr/>
+        <br>
+
+        <ul>
+            <li>
+                <label><input type="checkbox" value="s_3">선물용 3kg</label>
+                <input type="number" min="0" max="5">개(최대 5개)
+            </li>
+            <li>
+                <label><input type="checkbox" value="s_5">선물용 5kg</label>
+                <input type="number" min="0" max="3">개(최대 3개)
+            </li>
+            <li>
+                <label><input type="checkbox" value="f_3">가정용 3kg</label>
+                <input type="number" min="0" max="5">개(최대 5개)
+            </li>
+            <li>
+                <label><input type="checkbox" value="f_5">가정용 5kg</label>
+                <input type="number" min="0" max="3">개(최대 3개)
+            </li>
+        </ul>
+        
+        <br>
+        <hr/>
+        <br>
+
+        <!-- 날짜 및 시간 -->
+        <h1>날짜 지정하기</h1>
+        <input type="date" min="2022-01-01" max="2022-01-20">
+        <input type="month">
+        <input type="week">
+
+        <h1>시간 지정하기</h1>
+        <input type="time">
+        <input type="datetime-local">
+        
+        <br>
+        <hr/>
+        <br>
+
+        <!-- 로그인 -->
+        <form>
+            <fieldset>
+                <legend>로그인</legend>
+                <label><input type="text"></label>
+                <br>
+                <label><input type="password"></label>
+                <div style="margin-top: 10px;">
+                    <!-- <input type="submit" value="로그인"> -->
+                    <input type="image" src="../images/login.png" alt="로그인">
+                    <input type="reset" value="취소">
+                    <!-- <input type="image" src="../images/notice.jpg" alt=""> -->
+                </div>
+            </fieldset>
+        </form>
+
+        <br>
+        <hr/>
+        <br>
+
+        <input type="button" value="Open New Window(Naver)" onclick="window.open('http://www.naver.com')">
+
+        <br>
+        <hr/>
+        <br>
+
+        <!-- 파일 첨부 기능 -->
+        <form>
+            <fieldset>
+                <legend>반품 정보</legend>
+                <p>만일 수령한 상품에 문제가 있다면 즉시 <b>반품신청</b>해 주세요.</p>
+                <p>반품 신청 시, 상품의 상태를 사진으로 첨부해 주세요.</p>
+                <hr/>
+                <input type="file">
+                <input type="hidden" value="사이트에서는 보이지 않는 내용">
+            </fieldset>
+        </form>
+    </body>
+</html>

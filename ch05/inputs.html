@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>배송정보</legend>
+                <label>이름
+                    <input type="text">
+                </label>
+                <br>
+                <label>배송주소
+                    <input type="text">
+                </label>
+                <br>
+                <label>이메일
+                    <input type="email">
+                </label>
+                <br>
+                <label>연락처
+                    <input type="tel">
+                </label>
+                <br>
+                <label>배송지정<br>(주문일로부터 최소 3일 이후)
+                    <input type="date">
+                </label>
+                <label for="memo">메모</label>
+                <textarea id="memo"></textarea>
+            </fieldset>
+        </form>
+
+        <hr/>
+
+        <h1>여러 데이터 나열하기</h1>
+        <label for="prod1">상품 선택</label>
+        <select id="prod1">
+            <option value="special_3">선물용 3kg</option>
+            <option value="special_5">선물용 5kg</option>
+            <option value="family_3">가정용 3kg</option>
+            <option value="family_5">가정용 5kg</option>
+        </select>
+
+        <hr/>
+
+        <label for="prod2">포장 여부</label>
+        <input type="text" id="prod2" list="pack">
+        <datalist id="pack">
+            <option value="package">선물 포장</option>
+            <option value="no_package">선물 포장 안 함</option>
+        </datalist>
+        
+        <hr/>
+
+        <div>
+            <button type="submit">전송하기</button>
+            <button type="reset">취소하기</button>
+        </div>
+    </body>
+</html>

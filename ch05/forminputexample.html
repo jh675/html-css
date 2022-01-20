@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            div{
+                margin: 10px 5px;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 입력 양식 -->
+        <h2>입력 양식</h2>
+        <form>
+            <fieldset style="padding: 10px 5px 10px 5px;">
+                <label>이름: 
+                    <input type="text" name="name" placeholder="이름을 입력해주세요" autofocus> <!-- 이름:값 → name : 김진환 -->
+                </label>
+                <br>                
+                <label>학과: 
+                    <input type="text" name="major" placeholder="학과를 입력해주세요." readonly> <!-- 학과:값 → major : [핀테크]오픈뱅킹을 활용한 Java개발자 양성과정 -->
+                </label>
+                <br>
+                <label>비밀번호: 
+                    <input type="password" name="password" placeholder="비밀번호를 입력해주세요." required>
+                </label>
+                <br>
+                <div style="margin-top: 5px;">
+                    <input type="submit" value="전송">
+                    <input type="reset" value="취소">
+                </div>
+            </fieldset>
+        </form>
+
+        <br>
+        <hr/>
+        <br>
+
+         <!-- 성별 및 학년 -->
+         <form>
+            <fieldset>
+                <legend>성별</legend>
+                <input type="radio" name="gender" value="male">남자
+                <input type="radio" name="gender" value="female">여자
+                <br>
+                <legend>학년</legend>
+                <input type="radio" name="grade" value="1">1학년
+                <input type="radio" name="grade" value="2">2학년
+                <input type="radio" name="grade" value="3">3학년
+                <input type="radio" name="grade" value="4">4학년
+                <div>
+                    <input type="submit" value="전송">
+                    <input type="reset" value="취소">
+                </div>
+            </fieldset>
+        </form>
+
+        <br>
+        <hr/>
+        <br>
+
+        <!-- 관심사 -->
+        <form>
+            <fieldset>
+                <legend>관심사(학습 주제)</legend>
+                <label>
+                    <input type="checkbox" name="subject" value="html">HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="subject" value="Java">Java
+                </label>
+                <label>
+                    <input type="checkbox" name="subject" value="JavaScript">JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="subject" value="node.js">Node.js
+                </label>
+                <br>
+                <div>
+                    <input type="submit" value="전송">
+                    <input type="reset" value="취소">
+                </div>
+            </fieldset>
+        </form>
+
+        <br>
+        <hr/>
+        <br>
+        
+        <!-- 버튼 사용 -->
+        <h3>Button 태그 사용</h3>
+        <input type="button" onclick="alert('클릭:type=button')" value="버튼"> <!-- input태그를 사용하여 버튼 기능을 추가. -->
+        <button type="button" onclick="alert('클릭:이미지버튼')"><img src="../images/icon3.png"></button> <!-- 버튼 안에 이미지 추가. -->
+        <!-- input태그는 단독으로 쓰이기 때문에 input태그 안에는 다른 태그가 들어올 수 없지만, button태그는 다른 태그와 함께 사용할 수 있다. -->
+
+        <br>
+        <hr/>
+        <br>
+        <form>
+            <fieldset>
+                <legend>날짜/시간 양식</legend>
+                <h3>오늘 날짜 입력</h3>
+                Today : <input type="date" name="today">
+                <h3>프로젝트 수행 기간</h3>
+                From : <input type="date" name="from" min='2021-03-01' max="2021-12-31">
+                to : <input type="date" name="to" min='2021-03-01' max="2021-12-31">
+                <br>
+                <h3>생년(년/월) 입력</h3>
+                birthday_month : <input type="month" name="birth">
+                <h3>주간 계획(년/주) 입력</h3>
+                week Plan : <input type="week" name="weekend">
+                <br>
+                <h3>현재 시간 입력</h3>
+                Time : <input type="time" name="now">
+                <h3>생일(년도, 월, 일, 시간)</h3>
+                Birthday : <input type="datetime=local" name="birthday_time">
+            </fieldset>
+            <fieldset>
+                <legend>숫자입력</legend>
+                <h3>나이</h3>
+                <input type="number" name="age" min="20" max="99">
+                <h3>0~100범위 사이의 원하는 지점 선택</h3>
+                <input type="range" name="age" min="0" max="100">
+            </fieldset>
+            <fieldset>
+                <legend>이메일/URL/검색어</legend>
+                <h3>이메일</h3>
+                이메일 : <input type="email" name="email">
+                <br>
+                <h3>URL</h3>
+                URL : <input type="url" name="site">
+                <br>
+                <h3>검색어</h3>
+                검색어 : <input type="search" name="search">
+                <br>
+                <div>
+                    <input type="submit" value="전송">
+                    <input type="reset" value="취소">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
