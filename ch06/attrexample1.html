@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>속성 선택자</title>
+    <style>
+        li {
+            display: inline;
+        }
+
+        a[href] {
+            background: yellow;
+            border: 1px solid gray;
+            font-weight: normal;
+        }
+
+        a[target=_blank]{
+            padding-right: 30px;
+            background: url(../images/icon3.png) no-repeat center right;
+        }
+    </style>
+</head>
+<body>
+    <h3>속성 선택자 : 속성만</h3>
+    <ul>
+        <li><a>메인메뉴 : </a></li>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="www.naver.com">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>  
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+    
+    <h3>속성 선택자 : 속성값만</h3>
+    <ul>
+        <li><a href="https://html.spec.whatwg.org" target="_blank">HTML</a></li>
+        <li><a href="https://www.w3.org/TR/selectors">CSS Selector Level 3</a></li>
+        <li><a href="https://www.w3.org/TR/css3-mediaqueris">미디어 쿼리</a></li>
+    </ul>
+</body>
+</html>
