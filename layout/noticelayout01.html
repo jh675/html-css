@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul, li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header{
+            width: 100%;
+            padding: 30px;
+            border-bottom: 1px solid #ff0077;
+        }
+
+        header > * {
+            display: inline-block;
+            margin-right: 50px;
+        }
+
+        header nav ul li {
+            float: left;
+            font-weight: 900;
+            font-size: x-large;
+            padding: 0 50px;
+        }
+
+        aside {
+            width: 20%;
+            float: left;
+            padding: 10px;
+        }
+
+        aside > div {
+            background-color: #D3F943;
+            color: black;
+            font-size: xx-large;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+
+            margin: 15px 0 30px 0;
+        }
+
+        aside > nav > ul > li {
+            border: 1px solid #ff0077;
+            border-radius: 5px;
+            padding:10px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        main {
+            width: 80%;
+            float: left;
+            padding: 20px 30px;
+
+        }
+
+        main > section:first-child > div:first-child {
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        main > section:first-child > div:first-child + div > ul > li {
+            float: left;
+            padding: 5px;
+            font: x-small;
+        }
+
+        main > section:first-child > div:last-child {
+            clear: both;
+            border-radius: 1px solid #ff0077;
+            padding: 20px 50px;
+            text-align: center;
+            margin: 50px 0 20px 0;
+        }
+
+        main > section:first-child > div:last-child > * {
+            height: 30px;
+        }
+
+        .in {
+            width: 80px;
+        }
+
+        input[type=button] {
+            background-color: #D3F943;
+            color: black;
+            border: 1px solid #ff0077;
+        }
+        
+        table {
+            border-collapse: collapse;
+            font-size: small;
+        }
+
+        th {
+            border-top: 5px solid #ff0077;
+            border-bottom: 1px solid #ff0077;
+            padding: 10px 0;
+        }
+
+        td {
+            text-align: center;
+            border-bottom: 1px solid #ff0077;
+        }
+
+        tbody > tr > td:nth-of-type(2) {
+            text-align: left;
+        }
+
+        main > section:nth-of-type(2) > div  {
+            text-align:center;
+        }
+
+        main > section:nth-of-type(2) > div > div {
+            display: inline-block;
+            margin: 20px;
+        }
+        
+        span {
+            padding: 0 5px;
+            font-size: 12px;
+        }
+
+        main > section:nth-of-type(3) > div {
+            border:1px solid #ff0077;
+            padding: 20px;
+        }
+
+        main > section:nth-of-type(3) > div > div > input[type=button] {
+            float: right;
+        }
+
+        main > section:nth-of-type(3) > div > div:last-of-type {
+            border: 1px solid #ff0077;
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        main > section:nth-of-type(3) > div > div:last-child > div {
+            display: inline-block;
+        }
+
+        main > section:nth-of-type(3) > div > div:last-of-type > div:last-of-type {
+            float: right;
+        }
+
+        main > section:nth-of-type(3) > div > div:last-of-type > div > ul > li {
+            display: inline-block;
+            padding: 5px;
+            font-size: small;
+        }
+
+        input[type=radio] + label {
+            font-size: small;
+        }
+
+        footer {
+            width: 100%;
+            clear: both;
+            background-color: #D3F943;
+            
+        }
+
+        footer > div > ul > li {
+            display: inline-block;
+            padding: 15px 10px;
+            border-bottom: 1px solid #ff0077;
+        }
+
+        footer > div:last-child {
+            padding-left: 150px;
+        }
+        
+        footer > div:last-child > p {
+            padding: 0;
+            margin: 0;
+            font-size: small;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div>Colorful <br><b>Daegu</b></div>
+            <nav>
+                <ul>
+                    <li>민원/소통/참여</li>
+                    <li>정보공개</li>
+                    <li>대구소개</li>
+                    <li>분야별정보</li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <div>정보공개</div>
+            <nav>
+                <ul>
+                    <li>행정정보공개</li>
+                    <li>정책실명제</li>
+                    <li>알림정보</li>
+                    <li>통합자료실</li>
+                    <li>공공저작물</li>
+                    <li>공공데이터개방</li>
+                    <li>계약정보</li>
+                    <li>감사정보</li>
+                    <li>통계정보</li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section>
+                <div>공지사항</div>
+                <div>
+                    <ul>
+                        <li>Home&nbsp;&gt;</li>
+                        <li>정보공개&nbsp;&gt;</li>
+                        <li>알림정보&nbsp;&gt;</li>
+                        <li><b>공지사항</b></li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="text" class="in">&nbsp;~&nbsp;<input type="text" class="in">
+                    <select>
+                        <option value="title">제목</option>
+                        <option value="content">글내용</option>
+                        <option value="dept">부서명</option>
+                    </select>
+                    <input type="text">
+                    <select>
+                        <option value="option">보기 옵션</option>
+                        <option value="30">30개씩 보기</option>
+                        <option value="50">50개씩 보기</option>
+                    </select>
+                    <input type="button" value="검색">
+                </div>
+            </section>
+            <section>
+                <table>
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:5%">
+                        <col style="width:50%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:5%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>부서명</th>
+                            <th>등록일</th>
+                            <th>첨부</th>
+                            <th>조회</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>공지</td>
+                            <td>
+                                <p>도시계획시설(자동차정류장)사업 실시계획 열람 및 사업인정에 관한...</p>
+                            </td>
+                            <td>택시물류과</td>
+                            <td>2021-03-30</td>
+                            <td><img src="../images/dot.png"><img src="../images/dot.png"><img src="../images/dot.png"></td>
+                            <td>3150</td>
+                        </tr>
+                        <tr>
+                            <td>3233</td>
+                            <td>
+                                <p>국가정보자원관리원 대구센터 공무직 채용시험 서류전형 합격자 및 <br>면접시험 일정 공고</p>
+                            </td>
+                            <td>정보화담당관</td>
+                            <td>2022-01-25</td>
+                            <td><img src="../images/dot.png">
+                            <td>237</td>
+                        </tr>
+                        <tr>
+                            <td>3232</td>
+                            <td>
+                                <p>장애인 특별공급 “시지 라온프라이빗” 기관추천 접수일정 변경(3차) 안내</p>
+                            </td>
+                            <td>장애인복지과</td>
+                            <td>2022-01-25</td>
+                            <td><img src="../images/dot.png"><img src="../images/dot.png"></td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>3231</td>
+                            <td>
+                                <p>★일자리 전문가와 함께하는 3인 3색 중장년 일자리 토크 콘서트 2월 23일 <br>참가...</p>
+                            </td>
+                            <td>일자리노동정책<br>과</td>
+                            <td>2022-01-24</td>
+                            <td><img src="../images/icon2.png"></td>
+                            <td>277</td>
+                        </tr>
+                        <tr>
+                            <td>3230</td>
+                            <td>
+                                <p>★대구시 중장년 Happy Job 일자리 소통 커뮤니티 2월 16일 참가안내★</p>
+                            </td>
+                            <td>일자리노동정책<br>과</td>
+                            <td>2022-01-24</td>
+                            <td><img src="../images/dot.png"><img src="../images/icon2.png"></td>
+                            <td>288</td>
+                        </tr>
+                        <tr>
+                            <td>3229</td>
+                            <td>
+                                <p>「대구 경상감영지」국가지정문화재(사적) 추가지정 예고 알림</p>
+                            </td>
+                            <td>문화예술정책과</td>
+                            <td>2022-01-24</td>
+                            <td><img src="../images/icon2.png"></td>
+                            <td>37</td>
+                        </tr>
+                        <tr>
+                            <td>3228</td>
+                            <td>
+                                <p>설 연휴 대구문화프로그램 소개</p>
+                            </td>
+                            <td>문화예술정책과</td>
+                            <td>2022-01-24</td>
+                            <td><img src="../images/icon2.png"></td>
+                            <td>442</td>
+                        </tr>
+                        <tr>
+                            <td>3227</td>
+                            <td>
+                                <p>공시송달공고 「학산공원 조성공사(4단계)」</p>
+                            </td>
+                            <td>공원조성과</td>
+                            <td>2022-01-24</td>
+                            <td><img src="../images/icon2.png"></td>
+                            <td>117</td>
+                        </tr>
+                        <tr>
+                            <td>3226</td>
+                            <td>
+                                <p>22년 설명절 전통시장 주변도로 주정차 허용 구간 현황</p>
+                            </td>
+                            <td>민생경제과</td>
+                            <td>2022-01-21</td>
+                            <td><img src="../images/icon1.png"></td>
+                            <td>259</td>
+                        </tr>
+                        <tr>
+                            <td>3225</td>
+                            <td>
+                                <p>부적합농산물 공지</p>
+                            </td>
+                            <td>운영과</td>
+                            <td>2022-01-21</td>
+                            <td></td>
+                            <td>71</td>
+                        </tr>
+                        <tr>
+                            <td>3224</td>
+                            <td>
+                                <p>2022년 우수 사회적경제기업 육성사업 1차 수진기업 모집</p>
+                            </td>
+                            <td>사회적경제과</td>
+                            <td>2022-01-20</td>
+                            <td><img src="../images/dot.png"><img src="../images/dot.png"></td>
+                            <td>154</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <span>&lt;&lt;</span>
+                    <span>&lt;</span>
+                    <div>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <span>&gt;</span>
+                    <span>&gt;&gt;</span>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div>
+                        <h2>현재페이지의 내용과 사용편의성에 만족하십니까?</h2>
+                        <input type="radio" id="cm1" name="select" value="5">
+                        <label for="cm1">매우 만족</label>
+                        <input type="radio" id="cm2" name="select" value="4">
+                        <label for="cm1">만족</label>
+                        <input type="radio" id="cm3" name="select" value="3">
+                        <label for="cm1">보통</label>
+                        <input type="radio" id="cm4" name="select" value="2">
+                        <label for="cm1">불만족</label>
+                        <input type="radio" id="cm5" name="select" value="1">
+                        <label for="cm1">매우 불만족</label>
+
+                        <input type="button" value="평가하기">
+                    </div>
+                    <div>
+                        <div>
+                            <ul>
+                                <li><b>담당부서</b></li>
+                                <li><b>담당자</b></li>
+                                <li><b>전화번호</b></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><b>최근수정일</b></li>
+                                <li>2019.01.08</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li><b>개인정보처리방침</b></li>
+                    <li>저작권정책</li>
+                    <li>행정서비스 현장</li>
+                    <li>뷰어다운로드</li>
+                    <li>관련기관</li>
+                    <li>전화번호(FAX)안내</li>
+                    <li>공공앱소개</li>
+                    <li>배너모음</li>
+                    <li>XML</li>
+                    <li>찾아오시는 길</li>
+                </ul>
+            </div>
+            <div>
+                <p>(우 41911) 대구광역시 중구 공평로 88 /별관 : 대구광역시 북구 연암로40 / 전화번호 : 053)120, 053)803-0114</p>
+                <p>DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
