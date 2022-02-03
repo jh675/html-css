@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #board {
+            width: 70%;
+            margin: 0 auto;
+            line-height: 36px;
+        }
+
+        header > h3 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            background-color: #e8b2bf;
+            font-size: small;
+        }
+
+        td {
+            border-bottom:1px solid brown;
+            text-align: center;
+            font-size: small;
+        }
+
+        tbody tr > td:first-child + td {
+            text-align: center;
+        }
+
+        main > div {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        footer > div {
+            text-align: center;
+
+        }
+
+        #conatiner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #e8b2bf;
+            padding: 30px;
+        }
+
+        #header > ul {
+            list-style-type: none;
+        }
+
+        #header > ul > li {
+            float: left;
+            padding: 20px;
+            text-decoration: underline;
+        }
+
+        #sidebar {
+            box-sizing: border-box;
+            width: 30%;
+            height: 600px;
+            border: 1px dotted #e8b2bf;
+            float: left;
+        }
+        #board {
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Home</h1>
+            <ul>
+                <li>메뉴 1</li>
+                <li>메뉴 2</li>
+                <li>메뉴 3</li>
+                <li>메뉴 4</li>
+            </ul>
+        </div>
+        <div id="sidebar">
+            <img src="../images/cat.jpg">
+            <img src="../images/tangerines.jpg">
+        </div>
+    </div>
+    <div id="board">
+        <header>
+            <h3>게시판 Title</h3>
+        </header>
+        <main>
+            <table>
+                <caption>Table</caption>
+                <colgroup>
+                    <col style="width: 10%;">
+                    <col style="width: 45%;">
+                    <col style="width: 20%;">
+                    <col style="width: 15%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                    <th>No</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                    <th>작성자</th>
+                    <th>조회수</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>제목</td>
+                        <td>2022.01.22</td>
+                        <td>자바킹</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>제목제목</td>
+                        <td>2022.01.23</td>
+                        <td>자바킹</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>제목제목제목</td>
+                        <td>2022.01.24</td>
+                        <td>자바킹</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>제목제목제목제목</td>
+                        <td>2022.01.25</td>
+                        <td>자바킹</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        <div>
+                <span>◀</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>▶</span>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <select>
+                    <option value="total">제목+내용</option>
+                    <option value="title">제목</option>
+                    <option value="contents">내용</option>
+                </select>
+                <input type="text">
+                <input type="button" value="검색">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
