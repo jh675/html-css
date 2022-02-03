@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show">
+        <h3 id="header">friend list</h3>
+        <ul id="list">
+            <li>김진환</li>
+            <li>백진석</li>
+            <li>조형석</li>
+        </ul>
+        <!-- <p>Hello, JavaScript</p> -->
+    </div>
+    <script>
+        console.log(document);
+        let show = document.getElementById('show');
+        console.log(show);
+
+        let pTag = document.createElement('p'); // <p>Hello, JavaScript</p>
+        pTag.setAttribute('id', 'hello');
+        pTag.setAttribute('class', 'JavaScript');
+        let text = document.createTextNode('Hello, JavaScript');
+        pTag.appendChild(text);
+
+        console.log(pTag);
+        document.body.appendChild(pTag);
+
+        let liTag = document.createElement('li');
+        let liText = document.createTextNode('거북이');
+        liTag.appendChild(liText); //부모자식 관계형성
+
+        // list태그 하위 요소 추가
+        document.getElementById('list').appendChild(liTag);
+
+        let list = document.getElementById('list')
+        console.log(list.childNodes);
+        list.childNodes[1].remove();
+
+        list.childNodes
+    </script>
+
+</body>
+</html>
