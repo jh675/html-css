@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <script src="javascript/gugudan.js"></script>
+    <style>
+        * {
+            margin: 3;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .row {
+            border: 1px dotted grey;
+        }
+
+        .row>td:nth-child(1) {
+            border-top: 1px dotted red;
+            border-left: 1px dotted red;
+            border-bottom: 1px dotted red;
+        }
+
+        .row>td:nth-child(5) {
+            border-top: 1px dotted red;
+            border-right: 1px dotted red;
+            border-bottom: 1px dotted red;
+        }
+
+        .row>td:not(:nth-child(1)),
+        .row>td:not(:nth-child(5)) {
+            border-top: 1px dotted red;
+            border-bottom: 1px dotted red;
+        }
+
+        div {
+            /* display: inline; */
+            border: 1px solid red;
+            margin: 0;
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+
+        span {
+            /* display: block; */
+            clear: left;
+            border: 1px solid blue;
+        }
+
+        div.eof {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="eof">
+        <!-- 반복문 > 반복문 생성. 작성. -->
+        <div>
+            <!-- 2 ~ 9: 8개 -->
+            <h3>2단</h3>
+            <p>2X1=2</p> <!-- 1 ~ 9 : 9개 -->
+            <p>2X2=4</p>
+            <p>2X9=18</p>
+        </div>
+        <div>
+            <h3>3단</h3>
+            <p>3X1=3</p>
+            <p>3X2=6</p>
+            <p>3X9=27</p>
+        </div>
+        <div>
+            <h3>4단</h3>
+            <p>4X1=4</p>
+            <p>4X2=8</p>
+            <p>4X9=36</p>
+        </div>
+        <span>1</span><span>2</span><span>3</span>
+    </div>
+
+</body>
+
+</html>
